@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App | Daniya</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="images/404.png">
+            <p>Oops! Invalid location :/</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            <div class="feels-like">
+                <i class="fa-solid fa-temperature-hot"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Feels Like</p>
+                </div>
+            </div>
+            <div class="pressure">
+                <i class="fa-solid fa-tachometer-slow"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Pressure</p>
+                </div>
+            </div>
+            <div class="country">
+                <i class="fa-solid fa-flag"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Country Code</p>
+                </div>
+            </div>
+            <div class="rain-volume">
+                <i class="fa-solid fa-cloud-showers-heavy"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Rain Volume (last 3 hours)</p>
+                </div>
+            </div>
+            <div class="coordinates">
+                <i class="fa-solid fa-globe"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Coordinates</p>
+                </div>
+            </div>
+            <div class="timezone">
+                <i class="fa-solid fa-clock"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Timezone</p>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+  
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
+    <iframe class="mapContainer" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDiIIhCaqovxoNY9uc17ge8Q_2ns7LAiNM&q=astanaituniversity" allowfullscreen></iframe>
+    <script src="index.js"></script>
+
+
+
+
+
+
+
+    <footer class="mini-footer">
+      <p>Aubakirova Daniya | SE-2214</p>
+  </footer>
+</body>
+
+</html>
